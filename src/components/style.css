@@ -17,7 +17,7 @@
   color: #FFFFFF;
   opacity: 0.5;
   margin: auto;
-  word-spacing: 50px;
+  word-spacing: 65vw;
 }
 
 .firstHeader {
@@ -106,6 +106,10 @@
 .MiniCard:hover {
   background-color: #007B7E;
   cursor: pointer;
+}
+
+.MiniCard:active {
+  background-color: #007B7E;
 }
 
 .box_image {
