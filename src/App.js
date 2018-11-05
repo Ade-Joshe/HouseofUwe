@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import img1 from './Assets/png/white shorts/Collar 1 white – 3.png';
 import img2 from './Assets/png/black shirts/Black fabric.png';
-import img3 from './Assets/png/kirikiri star/Ankara 1.png';
-
-// import logo from './logo.svg';
-// import Header from './components/header'
-// import Sidebar from './components/sidebar';
-// import Main from './components/main';
-
 
 class App extends Component {
 
