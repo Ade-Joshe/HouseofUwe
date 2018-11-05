@@ -73,6 +73,15 @@
   /* animation: linear; */
 }
 
+.sidebar_style {
+  background-color: rgb(209, 203, 203);
+  height: auto;
+  width: 10vw;
+  margin-left: 9vw;
+  overflow-y: scroll;
+  /* animation: linear; */
+}
+
 .main {
   width: 70vw;
   height: 90vh;

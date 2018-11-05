@@ -165,13 +165,16 @@ class App extends Component {
 						<div className='box'>
 							<img alt='' src={displayHandle} className='box_image' />
 						</div>
+						</div>
+						<div className='sidebar_style'>
 						{
 							styleHandler &&
 							styleHandler.map((x, index) => {
-								return (<p key={index} onClick={this.checkClick.bind(null, x.name)}> {x.name}</p>);
+								return (<p className='MiniCard' key={index} onClick={this.checkClick.bind(null, x.name)}> {x.name}</p>);
 							})
 						}
-					</div>
+						</div>
+					
 					{/* <Sidebar fabrics={setProps} checkSelection={this.handleDisplayChange} /> */}
 					{/* <Main fabrics={this.handleFabric} display={displayHandle} style={styleHandler} /> */}
 				</div>
