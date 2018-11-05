@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 
 
 const MiniCard = (props) => {
-    // console.log(props.name);
     const { fabric } = props;
+    // word(index);
     return (
         <Fragment>
             <div className='MiniCard'>

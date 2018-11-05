@@ -2,16 +2,23 @@ import React, { Component, Fragment } from 'react'
 import MiniCard from './miniCard';
 
 class Sidebar extends Component {
+
+    sendChange = (index) => {
+        const { checkSelection } = this.props;
+        checkSelection(index);
+    }
+
     render() {
-        console.log(this.props)
-        const { fabrics } = this.props
+        // console.log(this.props)
+
+        const { fabrics, handleDisplayChange } = this.props
         return (
             <Fragment>
                 <div className='sidebar'>
                     {
                         fabrics && fabrics !== null ?
                             (fabrics.map((x, index) => (
-                                <MiniCard key={index} fabric={x} />
+                                <MiniCard word={this.sendChange} key={index} index={index} fabric={x} />
                             ))) :
                             <span >No fabric to diplay </span>
                     }
@@ -20,5 +27,8 @@ class Sidebar extends Component {
         )
     }
 }
+
+
+//  handleDisplayChange.bind(null, index) }
 
 export default Sidebar;
