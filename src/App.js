@@ -3,6 +3,9 @@ import './App.css';
 import img1 from './Assets/png/white shorts/Collar 1 white – 3.png';
 import img2 from './Assets/png/black shirts/Black fabric.png';
 import img3 from './Assets/png/kirikiri star/Ankara 1.png';
+import img4 from './Assets/png/kente/Ankara 2 – 1.png';
+import img5 from './Assets/png/kente 2/Ankara 3 (2).png';
+import img6 from './Assets/png/horses/Ankara 4 (2).png';
 
 // import logo from './logo.svg';
 // import Header from './components/header'
@@ -26,19 +29,35 @@ class App extends Component {
 		{
 			material: {},
 			name: 'Ankara'
+		},
+		{
+			material: {},
+			name: 'Kente'
+		},
+		{
+			material: {},
+			name: 'New Kente'
+		},
+		{
+			material: {},
+			name: 'Horses'
 		}],
+
 		styleHandler: null,
-		displayArray: [img1, img2, img3],
+		displayArray: [img1, img2, img3, img4, img5, img6],
 		newDisplay: null,
 		setProps: null,
 		Styles: [{
 			name: 'Collar'
 		},
 		{
-			name: 'Sleeves'
+			name: 'Sleeve'
 		},
 		{
 			name: 'Cuff'
+		},
+		{
+			name: 'Pocket'
 		}]
 	}
 
