@@ -23,7 +23,7 @@ class App extends Component {
         name: 'Ankara'
       }
     ],
-    styleHandler: {},
+    styleHandler: null,
     // isFabric: false,
     setProps: null,
     Styles: [
@@ -38,25 +38,24 @@ class App extends Component {
       }
     ]
   }
-componentWillMount = () => {
-  this.setState({
-    setProps: this.state.fabrics
-  });
-}
-  handleFabric = () => {
+  componentWillMount = () => {
     this.setState({
+      setProps: this.state.fabrics
+    });
+  }
+  handleFabric = (admin) => {
 
-    })
+    console.log(admin)
   }
 
   handleStyles = () => {
     this.setState({
-      setProps: this.state.Styles
+      styleHandler: this.state.Styles
     });
   }
 
   render() {
-    const { setProps } = this.state;
+    const { setProps, styleHandler } = this.state;
     return (
       <div className="App">
         <div className='firstHeader'>
@@ -64,13 +63,13 @@ componentWillMount = () => {
         </div>
         <div className="header">
           <p>
-            <span onClick={this.handleFabric}> Fabrics </span>
+            <span onClick={this.handleFabric.bind(null,'i am Parent')}> Fabrics </span>
             <span onClick={this.handleStyles}> Style </span>
           </p>
         </div>
         <div className='PageWrapper'>
           <Sidebar fabrics={setProps} />
-          <Main />
+          <Main fabrics={this.handleFabric} style={styleHandler} />
         </div>
       </div>
     );
