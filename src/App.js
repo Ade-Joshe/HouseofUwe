@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 import img1 from './Assets/png/white shorts/Collar 1 white – 3.png';
 import img2 from './Assets/png/black shirts/Black fabric.png';
+import img3 from './Assets/png/kirikiri star/Ankara 1.png'
 
 class App extends Component {
 
 	state = {
 		displayIndex: null,
 		displayHandle: null,
+		newDisplay: null,
+		setProps: null,
+		styleHandler: null,
 		fabrics: [{
 			material: {},
 			name: 'Plain'
@@ -20,10 +24,9 @@ class App extends Component {
 			material: {},
 			name: 'Ankara'
 		}],
-		styleHandler: null,
+		
 		displayArray: [img1, img2, img3],
-		newDisplay: null,
-		setProps: null,
+		
 		Styles: [{
 			name: 'Collar'
 		},

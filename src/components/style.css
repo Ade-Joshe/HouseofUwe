@@ -68,7 +68,7 @@
 .sidebar {
   background-color: rgb(209, 203, 203);
   height: auto;
-  width: 30vw;
+  width: 10vw;
   overflow-y: scroll;
   /* animation: linear; */
 }
@@ -87,6 +87,7 @@
   width: 300px;
   margin: auto;
   margin-top: 70px;
+  margin-left: 388px;
 }
 
 .MiniCardPhoto {
