@@ -155,7 +155,7 @@ class App extends Component {
 									<div className='MiniCard' key={index} index={index} onClick={this.changePicture.bind(null, index)}>
 										{/* <img src={props.img} alt='' className='MiniCardPhoto' /> */}
 										<p> {x.name} </p>
-										<p>{x.name}</p>
+										{/* <p>{x.name}</p> */}
 									</div>
 								))) :
 								<span >No fabric to diplay </span>
