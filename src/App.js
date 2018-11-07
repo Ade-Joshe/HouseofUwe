@@ -66,6 +66,12 @@ import img28 from './Assets/png/white shorts/Collar 2 white – 29.png'; //
 
 import img29 from './Assets/png/white shorts/Collar 2 white – 33.png'; //
 
+//black starts here 
+
+import img30 from './Assets/png/black shirts/Long sleeve ankara 2.png'
+
+
+
 
 
 
@@ -124,7 +130,7 @@ class App extends Component {
 
 		Styles: [{
 
-			name: 'Shirt'
+			// name: 'Shirt'
 
 		},
 
@@ -222,7 +228,7 @@ class App extends Component {
 
 		console.log('i am here now');
 
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'w') {
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'w') {
 
 			console.log('ntachi Osa');
 
@@ -236,7 +242,7 @@ class App extends Component {
 
 
 
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'b') {
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'b') {
 
 			this.setState({
 
@@ -246,7 +252,7 @@ class App extends Component {
 
 		}
 
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'a') {
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'a') {
 
 			this.setState({
 
@@ -560,7 +566,16 @@ class App extends Component {
 
 			case 'b': //case when the shirt color is black
 
+				
+				if ((CuffFlag && SleeveFlag) === 'a' && (CollarFlag === 'b')) {
 
+					this.setState({
+
+						displayHandle: img30
+
+					})
+
+				}
 
 				break;
 
