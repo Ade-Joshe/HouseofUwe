@@ -70,6 +70,7 @@
   height: auto;
   width: 10vw;
   overflow-y: scroll;
+  /* padding-top: 30px */
   /* animation: linear; */
 }
 
@@ -89,19 +90,19 @@
 }
 
 .box {
-  background-color: white;
+  /* background-color: white;
   border: 1px solid darkgrey;
   border-radius: 4px;
   height: 350px;
   width: 300px;
-  margin: auto;
+  margin: auto; */
   margin-top: 70px;
   margin-left: 388px;
 }
 
 .MiniCardPhoto {
-  height: 120px;
-  width: 100%
+  height: 100px;
+  width: 70%
 }
 
 .MiniCard {
@@ -110,7 +111,7 @@
   width: 100%;
   margin: auto;
   height: auto;
-  padding: 20px 0 ;
+  padding: 5px 0 ;
 }
 
 .MiniCard:hover {
@@ -123,8 +124,9 @@
 }
 
 .box_image {
-  height: inherit;
   margin: 0;
+  width: 90pc;
   padding: 0;
-  margin-left: -162px;
+  margin-top: -14pc;
+  margin-left: -35pc;
 }
