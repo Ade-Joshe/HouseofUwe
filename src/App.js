@@ -38,11 +38,11 @@ class App extends Component {
 
 	//the state object
 	state = {
-		displayIndex: 0,
+		// displayIndex: 0,
 		displayHandle: null,
-		newDisplay: null,
+		// newDisplay: null,
 		setProps: null,
-		styleHandler: null,
+		// styleHandler: null,
 		fabrics: [{
 			material: {},
 			name: 'Plain'
@@ -57,9 +57,9 @@ class App extends Component {
 		}],
 		styleHandler: null,
 		colorPicker: ['w', 'b', 'a'],
-		newDisplay: null,
+		// newDisplay: null,
 		ActiveStyleFlag: 'Shirt',
-		setProps: null,
+		// setProps: null,
 		Styles: [{
 			name: 'Shirt'
 		},
@@ -81,7 +81,7 @@ class App extends Component {
 
 	//on mounting the component
 	componentWillMount = () => {
-		const { ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, colorPicker, ActiveStyleFlag } = this.state
+		const { ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, ActiveStyleFlag } = this.state
 		// // mounting sets the fabrics labels
 		this.setState({
 			setProps: this.state.fabrics,
@@ -111,7 +111,7 @@ class App extends Component {
 	changer = (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag) => {
 		console.log('i am here now');
 		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'w') {
-			// console.log('ntachi Osa');
+			console.log('ntachi Osa');
 			this.setState({
 				displayHandle: img1
 			})
@@ -287,7 +287,7 @@ class App extends Component {
 				break;
 			default:
 				return null;
-				break;
+				// break;
 		}
 	}
 
