@@ -4,8 +4,6 @@ import img1 from './Assets/png/white shorts/Collar 1 white – 3.png';
 import img2 from './Assets/png/black shirts/Black fabric.png';
 import img3 from './Assets/png/kirikiri star/Ankara 1.png';
 
-
-
 import img4 from './Assets/png/white shorts/Web 1920 – 26.png'; //
 import img5 from './Assets/png/white shorts/Web 1920 – 25.png'; //
 import img6 from './Assets/png/white shorts/Collar 2 white – 25.png'; //
@@ -32,6 +30,9 @@ import img26 from './Assets/png/white shorts/Collar 2 white – 30.png'; //
 import img27 from './Assets/png/white shorts/Collar 2 white – 31.png'; //
 import img28 from './Assets/png/white shorts/Collar 2 white – 29.png'; //
 import img29 from './Assets/png/white shorts/Collar 2 white – 33.png'; //
+
+//black starts here 
+import img30 from './Assets/png/black shirts/Long sleeve ankara 2.png'
 
 
 class App extends Component {
@@ -61,10 +62,8 @@ class App extends Component {
 		ActiveStyleFlag: 'Shirt',
 		// setProps: null,
 		Styles: [{
-			name: 'Shirt'
-		},
-		{
 			name: 'Collar'
+
 		},
 		{
 			name: 'Sleeve'
@@ -78,7 +77,6 @@ class App extends Component {
 		CuffFlag: 'w'
 	}
 
-
 	//on mounting the component
 	componentWillMount = () => {
 		const { ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, ActiveStyleFlag } = this.state
@@ -87,10 +85,8 @@ class App extends Component {
 			setProps: this.state.fabrics,
 			displayHandle: img1
 		});
-
 		console.log(ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, ActiveStyleFlag);
 	}
-
 
 	// know which style was clicked
 	checkClick = (style) => {
@@ -107,7 +103,6 @@ class App extends Component {
 		});
 	}
 
-
 	changer = (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag) => {
 		console.log('i am here now');
 		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'w') {
@@ -117,12 +112,13 @@ class App extends Component {
 			})
 		}
 
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'b') {
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'b') {
 			this.setState({
 				displayHandle: img2
 			})
 		}
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'a') {
+
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'a') {
 			this.setState({
 				displayHandle: img3
 			})
@@ -135,36 +131,43 @@ class App extends Component {
 						displayHandle: img4
 					})
 				}
+
 				if ((CollarFlag && SleeveFlag) === 'w' && (CuffFlag === 'a')) {
 					this.setState({
 						displayHandle: img5
 					})
 				}
+
 				if ((CollarFlag && CuffFlag) === 'w' && (SleeveFlag === 'b')) {
 					this.setState({
 						displayHandle: img6
 					})
 				}
+
 				if ((CollarFlag === 'w') && (SleeveFlag === 'b') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img7
 					})
 				}
+
 				if ((CollarFlag === 'w') && (SleeveFlag === 'b') && (CuffFlag === 'a')) {
 					this.setState({
 						displayHandle: img8
 					})
 				}
+
 				if ((CollarFlag === 'w') && (SleeveFlag === 'a') && (CuffFlag === 'w')) {
 					this.setState({
 						displayHandle: img9
 					})
 				}
+
 				if ((CollarFlag === 'w') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img10
 					})
 				}
+
 				if ((CollarFlag === 'w') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
 						displayHandle: img11
@@ -178,41 +181,48 @@ class App extends Component {
 						// displayHandle: img12
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'w') && (CuffFlag === 'b')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img13
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'w') && (CuffFlag === 'a')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img14
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'b') && (CuffFlag === 'w')) {
 					this.setState({
 						displayHandle: img15
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'b') && (CuffFlag === 'a')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img16
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'w')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img17
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img18
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
 						// no shirt available
@@ -221,107 +231,121 @@ class App extends Component {
 				}
 
 				//ankara Collars
-
 				if ((CollarFlag === 'a') && (SleeveFlag === 'w') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img20
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'w') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img21
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'w') && (CuffFlag === 'a')) {
 					this.setState({
 						displayHandle: img22
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'w')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img23
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'b')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img24
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'a')) {
 					this.setState({
 						// no shirt available
 						// displayHandle: img25
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'w')) {
 					this.setState({
 						displayHandle: img26
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img27
 					})
 				}
+
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
 						displayHandle: img28
 					})
 				}
+
 				if ((CollarFlag === 'b') && (SleeveFlag === 'b') && (CuffFlag === 'b')) {
 					this.setState({
 						displayHandle: img29
 					})
 				}
-				// console.log('hey im white, yoohooo')
-				break;
 
-			case 'b': //case when the shirt color is black
+				break;
+			case 'b': //case when the shirt color is black			
+				if ((CuffFlag && SleeveFlag) === 'a' && (CollarFlag === 'b')) {
+					this.setState({
+						displayHandle: img30
+					})
+				}
 
 				break;
 
 			case 'a': //when the shirt is ankara
 
+
 				break;
 			default:
 				return null;
-				// break;
 		}
-	}
 
+	}
 
 	// passes flags to tell the colors of the shirt,collar,sleeves and cuffs as white.
 	changeFabric = (index) => {
 		const { ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, colorPicker, ActiveStyleFlag } = this.state
-
 		console.log('i am the fabric ' + colorPicker[index] + ' of ' + this.state.ActiveStyleFlag);
 		if (ActiveStyleFlag === 'Shirt') {
 			this.setState({
 				ShirtFlag: colorPicker[index]
 			})
 		}
+
 		if (ActiveStyleFlag === 'Collar') {
 			this.setState({
 				CollarFlag: colorPicker[index]
 			})
 		}
+
 		if (ActiveStyleFlag === 'Sleeve') {
 			this.setState({
 				SleeveFlag: colorPicker[index]
 			})
 		}
+
 		if (ActiveStyleFlag === 'Cuff') {
 			this.setState({
 				CuffFlag: colorPicker[index]
 			})
 		}
+
 		console.log(ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, ActiveStyleFlag);
 		// console.log(index);
 		this.changer(ShirtFlag, CollarFlag, SleeveFlag, CuffFlag);
 	}
-
 
 
 	render() {
@@ -355,8 +379,8 @@ class App extends Component {
 						<div className='box'>
 							<img alt='' src={displayHandle} className='box_image' />
 						</div>
-						</div>
-						<div className='sidebar_style'>
+					</div>
+					<div className='sidebar_style'>
 						{
 							styleHandler &&
 							styleHandler.map((x, index) => {
@@ -369,5 +393,6 @@ class App extends Component {
 		);
 	}
 }
+
 
 export default App;
