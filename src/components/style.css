@@ -20,8 +20,19 @@
   word-spacing: 6vw;
 }
 
+.header>p:hover {
+  /* background-color: #007B7E; */
+  cursor: pointer;
+}
+
+.header>p:active {
+  background-color: rgb(158, 171, 172);
+  cursor: pointer;
+  opacity: 0;
+}
+
 .firstHeader {
-  background-color: rgb(209, 203, 203);
+  background-color: rgb(245, 237, 237);
   padding: 15px 0 0 10px;
   height: 40px;
   width: auto;
@@ -66,7 +77,7 @@
 /* scrollbar styles */
 
 .sidebar {
-  background-color: rgb(209, 203, 203);
+  background-color: rgb(245, 237, 237);
   height: auto;
   width: 10vw;
   overflow-y: scroll;
@@ -75,7 +86,7 @@
 }
 
 .sidebar_style {
-  background-color: rgb(209, 203, 203);
+  background-color: rgb(245, 237, 237);
   height: auto;
   width: 10vw;
   margin-left: 9vw;
@@ -112,15 +123,35 @@
   margin: auto;
   height: auto;
   padding: 5px 0 ;
+  color: #007B7E;
+}
+
+.MiniCard_style{
+  /* margin-top: 690px; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  padding: 22px 0 ;
+  color: #007B7E;
 }
 
 .MiniCard:hover {
-  background-color: #007B7E;
+  /* background-color: #007B7E; */
   cursor: pointer;
 }
 
 .MiniCard:active {
   background-color: #007B7E;
+}
+
+.MiniCard_style:hover {
+  /* background-color: #007B7E; */
+  cursor: pointer;
+}
+
+.MiniCard_style:active {
+  /* background-color: #007B7E; */
 }
 
 .box_image {

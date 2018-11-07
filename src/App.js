@@ -67,15 +67,15 @@ class App extends Component {
 		// styleHandler: null,
 		fabrics: [{
 			material: plainMaterial,
-			name: 'Plain'
+			// name: 'Plain'
 		},
 		{
 			material: blackMaterial,
-			name: 'Black'
+			// name: 'Black'
 		},
 		{
 			material: ankaraMaterial,
-			name: 'Ankara'
+			// name: 'Ankara'
 		}],
 		styleHandler: null,
 		colorPicker: ['w', 'b', 'a'],
@@ -106,7 +106,8 @@ class App extends Component {
 		// // mounting sets the fabrics labels
 		this.setState({
 			setProps: this.state.fabrics,
-			displayHandle: img1
+			displayHandle: img1,
+			styleHandler: this.state.Styles
 		});
 		console.log(ShirtFlag, CollarFlag, SleeveFlag, CuffFlag, ActiveStyleFlag);
 	}
@@ -703,12 +704,12 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div className='firstHeader'>
-					<p><strong> Uwe </strong></p>
+					{/* <p><strong> Uwe </strong></p> */}
 				</div>
 				<div className="header">
 					<p>
-						<span onClick={this.handleFabric}> Fabrics </span>
-						<span onClick={this.handleStyles}> Style </span>
+						<span className ='F'onClick={this.handleFabric}> Fabrics </span>
+						<span className ='F' onClick={this.handleStyles}> Style </span>
 					</p>
 				</div>
 				<div className='PageWrapper'>
@@ -736,7 +737,7 @@ class App extends Component {
 								return (
 									<div onClick={this.checkClick.bind(null, x.name)}>
 										<img src={x.material} alt='' />
-										<p className='MiniCard' key={index}> {x.name}</p>
+										<p className='MiniCard_style' key={index}> {x.name}</p>
 									</div>
 								);
 							})
