@@ -37,7 +37,23 @@ import img28 from './Assets/png/white shorts/Collar 2 white – 29.png'; //
 import img29 from './Assets/png/white shorts/Collar 2 white – 33.png'; //
 
 //black starts here 
-import img30 from './Assets/png/black shirts/Long sleeve ankara 2.png'
+// import img30 from './Assets/png/black shirts/Long sleeve ankara 2.png'
+import img30 from './Assets/png/black shirts/Cuff ankara 2.png';
+import img31 from './Assets/png/black shirts/Cuff black 2.png';
+import img32 from './Assets/png/black shirts/Cuff black 3.png';
+
+// ankara starts here
+import img33 from './Assets/png/kirikiri star/Cuff ankara.png'
+import img34 from './Assets/png/kirikiri star/Cuff black.png'
+import img35 from './Assets/png/kirikiri star/Cuff white.png'
+import img36 from './Assets/png/kirikiri star/Long sleeve black.png';
+import img37 from './Assets/png/kirikiri star/Web 1920 – 5 (2).png'
+import img38 from './Assets/png/kirikiri star/Web 1920 – 12 (2).png'
+import img39 from './Assets/png/kirikiri star/Web 1920 – 15 (2).png';
+import img40 from './Assets/png/kirikiri star/Web 1920 – 19 (2).png';
+import img41 from './Assets/png/kirikiri star/Cuff black.png'
+
+
 
 
 class App extends Component {
@@ -405,13 +421,13 @@ class App extends Component {
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
 						//  not found 
-						// displayHandle: img30
+						displayHandle: img31
 					})
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //bbaa
+						displayHandle: img30
 					})
 				}
 
@@ -460,8 +476,8 @@ class App extends Component {
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found  //aab
+						displayHandle: img32
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
@@ -556,14 +572,14 @@ class App extends Component {
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'b') && (CuffFlag === 'b')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //aabbb
+						displayHandle: img38
 					})
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'b') && (CuffFlag === 'a')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //abba
+						displayHandle: img40
 					})
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'w')) {
@@ -574,21 +590,21 @@ class App extends Component {
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //abab
+						displayHandle: img39
 					})
 				}
 				if ((CollarFlag === 'b') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found  //abaa
+						displayHandle: img37
 					})
 				}
 
 				// ankara collars
 				if ((CollarFlag === 'a') && (SleeveFlag === 'w') && (CuffFlag === 'w')) {
 					this.setState({
-						//  not found 
+						//  not found //aaww
 						// displayHandle: img30
 					})
 				}
@@ -606,37 +622,37 @@ class App extends Component {
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'w')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //abw
+						displayHandle: img35
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'b')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //abb
+						displayHandle: img36
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'b') && (CuffFlag === 'a')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found  //aaba
+						displayHandle: img33
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'w')) {
 					this.setState({
-						//  not found 
+						//  not found //aaw
 						// displayHandle: img30
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'b')) {
 					this.setState({
-						//  not found 
-						// displayHandle: img30
+						//  not found //aab
+						displayHandle: img34
 					})
 				}
 				if ((CollarFlag === 'a') && (SleeveFlag === 'a') && (CuffFlag === 'a')) {
 					this.setState({
-						//  not found 
+						//  not found //aaa
 						// displayHandle: img30
 					})
 				}
@@ -719,7 +735,7 @@ class App extends Component {
 							styleHandler.map((x, index) => {
 								return (
 									<div onClick={this.checkClick.bind(null, x.name)}>
-										{/* <img src={x.material} alt='' /> */}
+										<img src={x.material} alt='' />
 										<p className='MiniCard' key={index}> {x.name}</p>
 									</div>
 								);
