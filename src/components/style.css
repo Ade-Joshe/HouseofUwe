@@ -77,20 +77,22 @@
 /* scrollbar styles */
 
 .sidebar {
-  background-color: rgb(245, 237, 237);
+  background-color: rgb(255, 255, 255);
   height: auto;
   width: 10vw;
   overflow-y: scroll;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   /* padding-top: 30px */
   /* animation: linear; */
 }
 
 .sidebar_style {
-  background-color: rgb(245, 237, 237);
+  background-color: rgb(255, 255, 255);
   height: auto;
   width: 10vw;
   margin-left: 9vw;
   overflow-y: scroll;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   /* animation: linear; */
 }
 
@@ -141,6 +143,11 @@
   cursor: pointer;
 }
 
+.MiniCard >img:hover {
+  /* background-color: #007B7E; */
+  cursor: pointer;
+}
+
 .MiniCard:active {
   background-color: #007B7E;
 }
@@ -150,9 +157,9 @@
   cursor: pointer;
 }
 
-.MiniCard_style:active {
+/* .MiniCard_style:active { */
   /* background-color: #007B7E; */
-}
+/* } */
 
 .box_image {
   margin: 0;

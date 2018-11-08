@@ -51,7 +51,7 @@ import img37 from './Assets/png/kirikiri star/Web 1920 – 5 (2).png'
 import img38 from './Assets/png/kirikiri star/Web 1920 – 12 (2).png'
 import img39 from './Assets/png/kirikiri star/Web 1920 – 15 (2).png';
 import img40 from './Assets/png/kirikiri star/Web 1920 – 19 (2).png';
-import img41 from './Assets/png/kirikiri star/Cuff black.png'
+// import img41 from './Assets/png/kirikiri star/Cuff black.png'
 
 
 
@@ -128,9 +128,9 @@ class App extends Component {
 	}
 
 	changer = (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag) => {
-		console.log('i am here now');
-		if (ShirtFlag, CollarFlag, SleeveFlag, CuffFlag === 'w') {
-			console.log('ntachi Osa');
+		console.log('shirt');
+		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'w') {
+			console.log('white shirt');
 			this.setState({
 				displayHandle: img1
 			})
