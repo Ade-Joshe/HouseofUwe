@@ -136,13 +136,13 @@ class App extends Component {
 			})
 		}
 
-		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'b') {
+		if (ShirtFlag === 'b') {
 			this.setState({
 				displayHandle: img2
 			})
 		}
 
-		if (ShirtFlag && CollarFlag && SleeveFlag && CuffFlag === 'a') {
+		if (ShirtFlag === 'a') {
 			this.setState({
 				displayHandle: img3
 			})
