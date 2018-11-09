@@ -50,7 +50,6 @@
   width: 100%;
   height: 90vh;
   display: flex;
-
 }
 
 /* scroolbar styles */
@@ -89,12 +88,14 @@
 .sidebar_style {
   background-color: rgb(255, 255, 255);
   height: auto;
-  width: 10vw;
-  margin-left: 9vw;
+  width: 20vw;
+  /* margin-left: 9vw; */
   overflow-y: scroll;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   /* animation: linear; */
-}
+
+  /* float: left */
+ }  
 
 .main {
   width: 70vw;
@@ -103,14 +104,10 @@
 }
 
 .box {
-  /* background-color: white;
-  border: 1px solid darkgrey;
-  border-radius: 4px;
-  height: 350px;
-  width: 300px;
-  margin: auto; */
+  padding-top: 40px;
+  overflow: hidden;
   margin-top: 70px;
-  margin-left: 388px;
+  margin-left: 215px;
 }
 
 .MiniCardPhoto {
@@ -119,7 +116,6 @@
 }
 
 .MiniCard {
-  /* margin-top: 690px; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -146,9 +142,6 @@
 .MiniCard >img:hover {
   /* background-color: #007B7E; */
   cursor: pointer;
-}
-
-.MiniCard:active {
   background-color: #007B7E;
 }
 
