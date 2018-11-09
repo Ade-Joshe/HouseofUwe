@@ -54,8 +54,6 @@ import img40 from './Assets/png/kirikiri star/Web 1920 – 19 (2).png';
 import img41 from './Assets/png/kirikiri star/Cuff black.png'
 
 
-
-
 class App extends Component {
 
 	//the state object
@@ -135,13 +133,13 @@ class App extends Component {
 			})
 		}
 
-		if (ShirtFlag === 'b') {
+		if ((ShirtFlag === 'b') && (CollarFlag, SleeveFlag, CuffFlag === 'w')) {
 			this.setState({
 				displayHandle: img2
 			})
 		}
 
-		if (ShirtFlag === 'a') {
+		if ((ShirtFlag === 'a') && (CollarFlag, SleeveFlag, CuffFlag === 'w')) {
 			this.setState({
 				displayHandle: img3
 			})
@@ -700,6 +698,7 @@ class App extends Component {
 
 	render() {
 		const { setProps, styleHandler, displayHandle } = this.state;
+		// console.log(setProps);
 		return (
 			<div className="App">
 				<div className='firstHeader'>
@@ -714,14 +713,15 @@ class App extends Component {
 				<div className='PageWrapper'>
 					<div className='sidebar'>
 						{
-							setProps && setProps !== null ?
+							// setProps ?
+								// console.log('i work') &&
 								(setProps.map((x, index) => (
-									<div className='MiniCard' key={index} index={index} onClick={this.changeFabric.bind(null, index)}>
-										<img src={x.material} alt='' className='MiniCardPhoto' />
+									<div className='MiniCard' key={index} onClick={this.changeFabric.bind(null, index)}>
+										{/* <img src={x.material} alt='' className='MiniCardPhoto' /> */}
 										<p> {x.name} </p>
 									</div>
-								))) :
-								<span >No fabric to diplay </span>
+								))) 
+								// <span >No fabric to diplay </span>
 						}
 					</div>
 					<div className="main">
